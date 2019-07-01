@@ -6,14 +6,15 @@
 
 Checks if substrings are under minimum densities in a string.
 
-## Node Repository
+## Related Packages
 
-https://www.npmjs.com/package/@pelevesque/are-substrings-under-minimum-density
-
-@related:  
 https://github.com/pelevesque/are-substrings-over-maximum-density   
 https://github.com/pelevesque/are-substrings-under-minimum-occurrences  
 https://github.com/pelevesque/are-substrings-over-maximum-occurrences  
+
+## Node Repository
+
+https://www.npmjs.com/package/@pelevesque/are-substrings-under-minimum-density
 
 ## Installation
 
