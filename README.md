@@ -44,7 +44,7 @@ const areSubstringsUnderMinimumDensity = require('@pelevesque/are-substrings-und
 // under density returns true
 // 'a' takes up 50% of the string, less than a 75% density
 const str = 'aaaabbbb'
-const checks = { 'a': 0.75 }
+const checks = { a: 0.75 }
 const result = areSubstringsUnderMinimumDensity(str, checks)
 // result === true
 ```
@@ -52,7 +52,7 @@ const result = areSubstringsUnderMinimumDensity(str, checks)
 ```js
 // equal to density returns false
 const str = 'aaaabbbb'
-const checks = { 'a': 0.5 }
+const checks = { a: 0.5 }
 const result = areSubstringsUnderMinimumDensity(str, checks)
 // result === false
 ```
@@ -60,7 +60,7 @@ const result = areSubstringsUnderMinimumDensity(str, checks)
 ```js
 // over density returns false
 const str = 'a man, a hog, and a fly'
-const checks = { 'hog': 0.01 }
+const checks = { hog: 0.01 }
 const result = areSubstringsUnderMinimumDensity(str, checks)
 // result === false
 ```
@@ -70,7 +70,7 @@ const result = areSubstringsUnderMinimumDensity(str, checks)
 ```js
 // when one is under density, it returns true ('a' is under 75%)
 const str = 'aaaabbbb'
-const checks = { 'a': 0.75, 'b': 0.5 }
+const checks = { a: 0.75, b: 0.5 }
 const result = areSubstringsUnderMinimumDensity(str, checks)
 // result === true
 ```
@@ -78,7 +78,7 @@ const result = areSubstringsUnderMinimumDensity(str, checks)
 ```js
 // when all are over or equal to density, it returns false
 const str = 'aaaabbbb'
-const checks = { 'a': 0.25, 'bbbb': 0.5 }
+const checks = { a: 0.25, bbbb: 0.5 }
 const result = areSubstringsUnderMinimumDensity(str, checks)
 // result === false
 ```
